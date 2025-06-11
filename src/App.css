@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #d0f0fd, #c1e0ff);
+  font-family: 'Comic Sans MS', 'Segoe UI', cursive, sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  width: 100%;
+  max-width: 520px;
+  padding: 40px;
+  background-color: #fff7fb;
+  border-radius: 30px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border: 4px solid #aedff7;
+  transition: transform 0.3s ease;
+}
+
+.App:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  text-align: center;
+  color: #0077cc;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 119, 204, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: bold;
+  color: #005b99;
+  font-size: 18px;
+}
+
+input {
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #a3d7f9;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #64b5f6;
+  box-shadow: 0 0 6px rgba(66, 165, 245, 0.4);
+}
+
+button {
+  padding: 14px;
+  font-size: 18px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 0 #0097a7;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #00acc1;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 0 #007c91;
+}
+
+button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  border: 3px dashed #ccc;
+}
+
+.result.pass {
+  background-color: #c8facc;
+  color: #2e7d32;
+}
+
+.result.fail {
+  background-color: #ffe0e0;
+  color: #c62828;
+}
+
+.warnings {
+  margin-top: 16px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 12px;
+  border-radius: 10px;
+  color: #856404;
+}
